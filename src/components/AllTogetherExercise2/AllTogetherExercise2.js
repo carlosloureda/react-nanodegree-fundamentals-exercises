@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "./../../logo.svg";
 
 import "./AllTogetherExercise2.css";
 import ChatWindow from "./ChatWindow";
@@ -34,13 +32,7 @@ class AllTogetherExercide2 extends React.Component {
     const { messages } = this.state;
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">ReactND - Coding Practice</h1>
-        </header>
-        {/* Router is outside the Lesson 3 exercises, just added for having all the exercises together */}
-        <Link to="/">Go Home</Link>
+      <div>
         <h1>AllTogetherExercide2</h1>
         <div className="container">
           {users.map(user => (
