@@ -95,7 +95,7 @@ const movies = {
   }
 };
 
-class PassinData1Problem extends Component {
+class PassingData1Problem extends Component {
   render() {
     return (
       <div>
@@ -105,4 +105,4 @@ class PassinData1Problem extends Component {
   }
 }
 
-export default PassinData1Problem;
+export default PassingData1Problem;

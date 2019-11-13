@@ -42,7 +42,7 @@ const profiles = [
 const users = {
   1: {
     id: 1,
-    name: "Jane Cruz",
+    name: "Jane Jones",
     userName: "coder"
   },
   2: {
@@ -56,7 +56,7 @@ const users = {
     userName: "user123"
   },
   4: {
-    id: 4,
+    id: 3,
     name: "John Doe",
     userName: "user123"
   },
@@ -75,7 +75,7 @@ const users = {
 const movies = {
   1: {
     id: 1,
-    name: "Planet Earth 1"
+    name: "Planet Earth"
   },
   2: {
     id: 2,
@@ -95,23 +95,32 @@ const movies = {
   }
 };
 
-class PassinData1Problem extends Component {
+class PassingData1Problem extends Component {
+  constructor(props) {
+    super(props);
+    this.usersByMovie = {};
+
+    /*
+    We can map the users by the movie they liked.
+    */
+    profiles.forEach(profile => {
+      const movieID = profile.favoriteMovieID;
+
+      if (this.usersByMovie[movieID]) {
+        this.usersByMovie[movieID].push(profile.userID);
+      } else {
+        this.usersByMovie[movieID] = [profile.userID];
+      }
+    });
+    console.log("usersByMovie: ", this.usersByMovie);
+  }
   render() {
     return (
       <div>
-        <h2>Favorite Movies</h2>
-        {profiles.map(profile => {
-          const { userName } = users[profile.userID];
-          const { name: favoriteMovie } = movies[profile.favoriteMovieID];
-          return (
-            <p
-              key={profile.id}
-            >{`${userName}'s favorite movie is ${favoriteMovie}`}</p>
-          );
-        })}
+        <h2>How Popular is Your Favorite Movie?</h2>
       </div>
     );
   }
 }
 
-export default PassinData1Problem;
+export default PassingData1Problem;

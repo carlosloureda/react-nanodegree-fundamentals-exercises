@@ -1,8 +1,11 @@
 import React from "react";
 import "./App.css";
 
-import PassinData1Problem from "./components/PassingData1/PassinData1Problem";
-import PassinData1Solution from "./components/PassingData1/PassinData1Solution";
+import PassingData1Problem from "./components/PassingData1/PassingData1Problem";
+import PassingData1Solution from "./components/PassingData1/PassingData1Solution";
+
+import PassingData2Problem from "./components/PassingData2/PassingData2Problem";
+import PassingData2Solution from "./components/PassingData2/PassingData2Solution";
 
 import AllTogetherExercise1 from "./components/AllTogetherExercise1/AllTogetherExercise1";
 import AllTogetherExercise2 from "./components/AllTogetherExercise2/AllTogetherExercise2";
@@ -30,6 +33,16 @@ const Nav = () => {
             Passing Data 1 Solution
           </Link>
         </li>
+        <li>
+          <Link to="/lesson3/passing-data-exercise-2">
+            Passing Data 2 Exercise
+          </Link>
+        </li>
+        <li>
+          <Link to="/lesson3/passing-data-exercise-2-solution">
+            Passing Data 2 Solution
+          </Link>
+        </li>
       </ul>
     </nav>
   );
@@ -47,10 +60,16 @@ function App() {
         </header>
         <Switch>
           <Route path="/lesson3/passing-data-exercise">
-            <PassinData1Problem />
+            <PassingData1Problem />
           </Route>
           <Route path="/lesson3/passing-data-exercise-solution">
-            <PassinData1Solution />
+            <PassingData1Solution />
+          </Route>
+          <Route path="/lesson3/passing-data-exercise-2">
+            <PassingData2Problem />
+          </Route>
+          <Route path="/lesson3/passing-data-exercise-2-solution">
+            <PassingData2Solution />
           </Route>
           <Route path="/lesson3/all-together-1">
             <AllTogetherExercise1 />
