@@ -1,8 +1,7 @@
 import React from "react";
-// import AddPlayer from "./AddPlayer";
-// import Players from "./Players";
 import { Link } from "react-router-dom";
 import logo from "./../../logo.svg";
+
 import "./AllTogetherExercise2.css";
 import ChatWindow from "./ChatWindow";
 /*
@@ -14,15 +13,26 @@ The instructions are included in the `instructions.md` file.
 const users = [{ username: "Amy" }, { username: "John" }];
 
 const messages = [
-  { username: "Amy", text: "Hi, Jon!" },
-  { username: "Amy", text: "How are you?" },
-  { username: "John", text: "Hi, Amy! Good, you?" }
+  // { username: "Amy", text: "Hi, Jon!" },
+  // { username: "Amy", text: "How are you?" },
+  // { username: "John", text: "Hi, Amy! Good, you?" }
 ];
 
 class AllTogetherExercide2 extends React.Component {
-  state = {};
+  state = {
+    messages: messages
+  };
+
+  onNewMessage = (username, message) => {
+    // console.log(`${username} sent message: ${message}`);
+    this.setState(state => ({
+      messages: state.messages.concat([{ username, text: message }])
+    }));
+  };
 
   render() {
+    const { messages } = this.state;
+
     return (
       <div className="App">
         <header className="App-header">
@@ -34,7 +44,12 @@ class AllTogetherExercide2 extends React.Component {
         <h1>AllTogetherExercide2</h1>
         <div className="container">
           {users.map(user => (
-            <ChatWindow key={user.username} user={user} messages={messages} />
+            <ChatWindow
+              key={user.username}
+              user={user}
+              messages={messages}
+              onNewMessage={this.onNewMessage}
+            />
           ))}
         </div>
       </div>

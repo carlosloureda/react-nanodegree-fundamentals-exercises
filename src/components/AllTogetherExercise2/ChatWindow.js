@@ -4,6 +4,10 @@ import Messages from "./Messages";
 import NewMessage from "./NewMessage";
 
 class ChatWindow extends Component {
+  onNewMessage = message => {
+    this.props.onNewMessage(this.props.user.username, message);
+  };
+
   render() {
     const { user, messages } = this.props;
     return (
@@ -11,13 +15,13 @@ class ChatWindow extends Component {
         <h2>Super Awesome Chat</h2>
         <div className="name sender">{user.username}</div>
         <Messages messages={messages} user={user} />
-        <NewMessage />
+        <NewMessage onNewMessage={this.onNewMessage} />
       </div>
     );
   }
 }
 ChatWindow.propTypes = {
-  //   onMessage: PropTypes.func.isRequired,
+  onNewMessage: PropTypes.func.isRequired,
   user: PropTypes.object.isRequired,
   messages: PropTypes.array.isRequired
 };
