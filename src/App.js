@@ -19,6 +19,9 @@ import ManagingState1Solution from "./components/ManagingState1/Solution/Managin
 import ControlledComponents1Problem from "./components/ControlledComponents1/Problem/ControlledComponents1Problem";
 import ControlledComponents1Solution from "./components/ControlledComponents1/Solution/ControlledComponents1Solution";
 
+import ControlledComponents2Problem from "./components/ControlledComponents2/Problem/ControlledComponents2Problem";
+import ControlledComponents2Solution from "./components/ControlledComponents2/Solution/ControlledComponents2Solution";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 
@@ -89,6 +92,17 @@ const Nav = () => {
             Controlled Components 1 Solution
           </Link>
         </li>
+        {/* Controlled Components 2 */}
+        <li>
+          <Link to="/lesson3/controlled-components-exercise-2">
+            Controlled Components 2 Exercise
+          </Link>
+        </li>
+        <li>
+          <Link to="/lesson3/controlled-components-exercise-2-solution">
+            Controlled Components 2 Solution
+          </Link>
+        </li>
       </ul>
     </nav>
   );
@@ -143,6 +157,14 @@ function App() {
           </Route>
           <Route path="/lesson3/controlled-components-exercise-1-solution">
             <ControlledComponents1Solution />
+          </Route>
+
+          {/* Controlled Components 2 */}
+          <Route path="/lesson3/controlled-components-exercise-2">
+            <ControlledComponents2Problem />
+          </Route>
+          <Route path="/lesson3/controlled-components-exercise-2-solution">
+            <ControlledComponents2Solution />
           </Route>
 
           {/* All Together 1 */}
