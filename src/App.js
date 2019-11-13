@@ -1,5 +1,9 @@
 import React from "react";
 import "./App.css";
+
+import PassinData1Problem from "./components/PassingData1/PassinData1Problem";
+import PassinData1Solution from "./components/PassingData1/PassinData1Solution";
+
 import AllTogetherExercise1 from "./components/AllTogetherExercise1/AllTogetherExercise1";
 import AllTogetherExercise2 from "./components/AllTogetherExercise2/AllTogetherExercise2";
 
@@ -15,6 +19,16 @@ const Nav = () => {
         </li>
         <li>
           <Link to="/lesson3/all-together-2">All Togetherer 2</Link>
+        </li>
+        <li>
+          <Link to="/lesson3/passing-data-exercise">
+            Passing Data 1 Exercise
+          </Link>
+        </li>
+        <li>
+          <Link to="/lesson3/passing-data-exercise-solution">
+            Passing Data 1 Solution
+          </Link>
         </li>
       </ul>
     </nav>
@@ -32,10 +46,16 @@ function App() {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <Switch>
+          <Route path="/lesson3/passing-data-exercise">
+            <PassinData1Problem />
+          </Route>
+          <Route path="/lesson3/passing-data-exercise-solution">
+            <PassinData1Solution />
+          </Route>
           <Route path="/lesson3/all-together-1">
             <AllTogetherExercise1 />
           </Route>
-    
+
           <Route path="/lesson3/all-together-2">
             <AllTogetherExercise2 />
           </Route>

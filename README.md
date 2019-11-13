@@ -9,6 +9,10 @@ mentor while you study check [Udacity Nanodegree on React](https://www.udacity.c
 
 ## Lesson 3 Exercises - State Management
 
+### Passing data 1
+
+The explanation for this exercise is [here](/src/components/PaddingData1/README.md)
+
 ### All together Exercise 1
 
 The explanation for this exercise is [here](/src/components/AllTogetherExercise1/README.md)
