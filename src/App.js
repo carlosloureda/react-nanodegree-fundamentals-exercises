@@ -1,6 +1,8 @@
 import React from "react";
-import AllTogetherExercise1 from "./components/AllTogetherExercise1/AllTogetherExercise1";
 import "./App.css";
+import AllTogetherExercise1 from "./components/AllTogetherExercise1/AllTogetherExercise1";
+import AllTogetherExercise2 from "./components/AllTogetherExercise2/AllTogetherExercise2";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 
@@ -10,6 +12,9 @@ const Nav = () => {
       <ul>
         <li>
           <Link to="/lesson3/all-together-1">All Togetherer 1</Link>
+        </li>
+        <li>
+          <Link to="/lesson3/all-together-2">All Togetherer 2</Link>
         </li>
       </ul>
     </nav>
@@ -29,6 +34,10 @@ function App() {
         <Switch>
           <Route path="/lesson3/all-together-1">
             <AllTogetherExercise1 />
+          </Route>
+    
+          <Route path="/lesson3/all-together-2">
+            <AllTogetherExercise2 />
           </Route>
 
           <Route path="/">
