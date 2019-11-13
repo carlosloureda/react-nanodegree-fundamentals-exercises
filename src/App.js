@@ -4,6 +4,9 @@ import "./App.css";
 import PassinData1Problem from "./components/PassingData1/PassinData1Problem";
 import PassinData1Solution from "./components/PassingData1/PassinData1Solution";
 
+import PassinData2Problem from "./components/PassingData2/PassinData2Problem";
+import PassinData2Solution from "./components/PassingData2/PassinData2Solution";
+
 import AllTogetherExercise1 from "./components/AllTogetherExercise1/AllTogetherExercise1";
 import AllTogetherExercise2 from "./components/AllTogetherExercise2/AllTogetherExercise2";
 
@@ -30,6 +33,16 @@ const Nav = () => {
             Passing Data 1 Solution
           </Link>
         </li>
+        <li>
+          <Link to="/lesson3/passing-data-exercise-2">
+            Passing Data 2 Exercise
+          </Link>
+        </li>
+        <li>
+          <Link to="/lesson3/passing-data-exercise-2-solution">
+            Passing Data 2 Solution
+          </Link>
+        </li>
       </ul>
     </nav>
   );
@@ -51,6 +64,12 @@ function App() {
           </Route>
           <Route path="/lesson3/passing-data-exercise-solution">
             <PassinData1Solution />
+          </Route>
+          <Route path="/lesson3/passing-data-exercise-2">
+            <PassinData2Problem />
+          </Route>
+          <Route path="/lesson3/passing-data-exercise-2-solution">
+            <PassinData2Solution />
           </Route>
           <Route path="/lesson3/all-together-1">
             <AllTogetherExercise1 />
