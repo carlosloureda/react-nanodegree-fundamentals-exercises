@@ -16,6 +16,9 @@ import FunctionalComponentsSolution from "./components/FunctionalComponents/Solu
 import ManagingState1Problem from "./components/ManagingState1/Problem/ManagingState1Problem";
 import ManagingState1Solution from "./components/ManagingState1/Solution/ManagingState1Solution";
 
+import ControlledComponents1Problem from "./components/ControlledComponents1/Problem/ControlledComponents1Problem";
+import ControlledComponents1Solution from "./components/ControlledComponents1/Solution/ControlledComponents1Solution";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 
@@ -27,12 +30,10 @@ const Nav = () => {
         <li>
           <Link to="/lesson3/all-together-1">All Togetherer 1</Link>
         </li>
-
         {/* All Together 2 */}
         <li>
           <Link to="/lesson3/all-together-2">All Togetherer 2</Link>
         </li>
-
         {/* Passing Data 1 */}
         <li>
           <Link to="/lesson3/passing-data-exercise">
@@ -44,7 +45,6 @@ const Nav = () => {
             Passing Data 1 Solution
           </Link>
         </li>
-
         {/* Passing Data 2 */}
         <li>
           <Link to="/lesson3/passing-data-exercise-2">
@@ -56,7 +56,6 @@ const Nav = () => {
             Passing Data 2 Solution
           </Link>
         </li>
-
         {/* Managing State 1 */}
         <li>
           <Link to="/lesson3/managing-state-exercise-1">
@@ -68,7 +67,6 @@ const Nav = () => {
             Managing State 1 Solution
           </Link>
         </li>
-
         {/* Functional Components */}
         <li>
           <Link to="/lesson3/functional-components-exercise">
@@ -78,6 +76,17 @@ const Nav = () => {
         <li>
           <Link to="/lesson3/functional-components-solution">
             Functional Components Solution
+          </Link>
+        </li>
+        {/* Controlled Components 1 */}
+        <li>
+          <Link to="/lesson3/controlled-components-exercise-1">
+            Controlled Components 1 Exercise
+          </Link>
+        </li>
+        <li>
+          <Link to="/lesson3/controlled-components-exercise-1-solution">
+            Controlled Components 1 Solution
           </Link>
         </li>
       </ul>
@@ -126,6 +135,14 @@ function App() {
           </Route>
           <Route path="/lesson3/managing-state-exercise-1-solution">
             <ManagingState1Solution />
+          </Route>
+
+          {/* Controlled Components 1 */}
+          <Route path="/lesson3/controlled-components-exercise-1">
+            <ControlledComponents1Problem />
+          </Route>
+          <Route path="/lesson3/controlled-components-exercise-1-solution">
+            <ControlledComponents1Solution />
           </Route>
 
           {/* All Together 1 */}
