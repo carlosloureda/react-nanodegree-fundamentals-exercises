@@ -1,0 +1,19 @@
+.error {
+  background-color: blueviolet;
+  color: red;
+  width: 75%;
+  /* align-items: center; */
+  display: block;
+  margin: 5px auto;
+  padding: 5px;
+}
+
+.success {
+  background-color: greenyellow;
+  color: green;
+  width: 75%;
+  /* align-items: center; */
+  display: block;
+  margin: 5px auto;
+  padding: 5px;
+}
