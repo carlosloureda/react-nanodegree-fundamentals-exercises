@@ -10,6 +10,9 @@ import PassingData2Solution from "./components/PassingData2/PassingData2Solution
 import AllTogetherExercise1 from "./components/AllTogetherExercise1/AllTogetherExercise1";
 import AllTogetherExercise2 from "./components/AllTogetherExercise2/AllTogetherExercise2";
 
+import FunctionalComponentsProblem from "./components/FunctionalComponents/Problem/FunctionalComponentsProblem";
+import FunctionalComponentsSolution from "./components/FunctionalComponents/Solution/FunctionalComponentsSolution";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 
@@ -43,6 +46,17 @@ const Nav = () => {
             Passing Data 2 Solution
           </Link>
         </li>
+
+        <li>
+          <Link to="/lesson3/functional-components-exercise">
+            Functional Components Exercise
+          </Link>
+        </li>
+        <li>
+          <Link to="/lesson3/functional-components-solution">
+            Functional Components Solution
+          </Link>
+        </li>
       </ul>
     </nav>
   );
@@ -71,6 +85,14 @@ function App() {
           <Route path="/lesson3/passing-data-exercise-2-solution">
             <PassingData2Solution />
           </Route>
+
+          <Route path="/lesson3/functional-components-exercise">
+            <FunctionalComponentsProblem />
+          </Route>
+          <Route path="/lesson3/functional-components-solution">
+            <FunctionalComponentsSolution />
+          </Route>
+
           <Route path="/lesson3/all-together-1">
             <AllTogetherExercise1 />
           </Route>
