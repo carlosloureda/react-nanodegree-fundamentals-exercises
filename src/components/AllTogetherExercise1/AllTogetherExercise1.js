@@ -1,7 +1,7 @@
 import React from "react";
+
 import AddPlayer from "./AddPlayer";
 import Players from "./Players";
-import { Link } from "react-router-dom";
 
 class AllTogetherExercide1 extends React.Component {
   state = {
@@ -32,8 +32,6 @@ class AllTogetherExercide1 extends React.Component {
   render() {
     return (
       <div>
-        {/* Router is outside the Lesson 3 exercises, just added for having all the exercises together */}
-        <Link to="/">Go Home</Link>
         <h1>AllTogetherExercide1</h1>
         <h2>Add and List some players</h2>
         <AddPlayer onAddNewPlayer={this.onAddNewPlayer} />
