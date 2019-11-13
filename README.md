@@ -25,6 +25,10 @@ The explanation for this exercise is [here](/src/components/ManagingState1/READM
 
 The explanation for this exercise is [here](/src/components/ControlledComponents1/README.md)
 
+### Controlled Components 2
+
+The explanation for this exercise is [here](/src/components/ControlledComponents2/README.md)
+
 ### All together Exercise 1
 
 The explanation for this exercise is [here](/src/components/AllTogetherExercise1/README.md)
