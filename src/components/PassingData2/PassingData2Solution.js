@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import MovieCard from "./MovieCard";
 /*
 Use React and the data below to display a list of users alongside their favorite movies.
 
@@ -92,10 +92,14 @@ const movies = {
   5: {
     id: 5,
     name: "Get Out"
+  },
+  6: {
+    id: 6,
+    name: "Mad Max"
   }
 };
 
-class PassinData1Problem extends Component {
+class PassingData1Solution extends Component {
   constructor(props) {
     super(props);
     this.usersByMovie = {};
@@ -118,9 +122,22 @@ class PassinData1Problem extends Component {
     return (
       <div>
         <h2>How Popular is Your Favorite Movie?</h2>
+        {/* {Object.entries(this.usersByMovie).map(([movieID, usersIDs]) => { */}
+        <div>
+          {Object.keys(movies).map(id => {
+            return (
+              <MovieCard
+                key={id}
+                users={users}
+                movie={movies[id]}
+                usersIdsWhoLikedMovie={this.usersByMovie[id]}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   }
 }
 
-export default PassinData1Problem;
+export default PassingData1Solution;

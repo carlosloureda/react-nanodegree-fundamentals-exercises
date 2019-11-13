@@ -95,14 +95,23 @@ const movies = {
   }
 };
 
-class PassinData1Problem extends Component {
+class PassingData1Problem extends Component {
   render() {
     return (
       <div>
         <h2>Favorite Movies</h2>
+        {profiles.map(profile => {
+          const { userName } = users[profile.userID];
+          const { name: favoriteMovie } = movies[profile.favoriteMovieID];
+          return (
+            <p
+              key={profile.id}
+            >{`${userName}'s favorite movie is ${favoriteMovie}`}</p>
+          );
+        })}
       </div>
     );
   }
 }
 
-export default PassinData1Problem;
+export default PassingData1Problem;

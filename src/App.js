@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 
-import PassinData1Problem from "./components/PassingData1/PassinData1Problem";
-import PassinData1Solution from "./components/PassingData1/PassinData1Solution";
+import PassingData1Problem from "./components/PassingData1/PassingData1Problem";
+import PassingData1Solution from "./components/PassingData1/PassingData1Solution";
 
-import PassinData2Problem from "./components/PassingData2/PassinData2Problem";
-import PassinData2Solution from "./components/PassingData2/PassinData2Solution";
+import PassingData2Problem from "./components/PassingData2/PassingData2Problem";
+import PassingData2Solution from "./components/PassingData2/PassingData2Solution";
 
 import AllTogetherExercise1 from "./components/AllTogetherExercise1/AllTogetherExercise1";
 import AllTogetherExercise2 from "./components/AllTogetherExercise2/AllTogetherExercise2";
@@ -60,16 +60,16 @@ function App() {
         </header>
         <Switch>
           <Route path="/lesson3/passing-data-exercise">
-            <PassinData1Problem />
+            <PassingData1Problem />
           </Route>
           <Route path="/lesson3/passing-data-exercise-solution">
-            <PassinData1Solution />
+            <PassingData1Solution />
           </Route>
           <Route path="/lesson3/passing-data-exercise-2">
-            <PassinData2Problem />
+            <PassingData2Problem />
           </Route>
           <Route path="/lesson3/passing-data-exercise-2-solution">
-            <PassinData2Solution />
+            <PassingData2Solution />
           </Route>
           <Route path="/lesson3/all-together-1">
             <AllTogetherExercise1 />

@@ -95,7 +95,7 @@ const movies = {
   }
 };
 
-class PassinData1Solution extends Component {
+class PassingData1Problem extends Component {
   constructor(props) {
     super(props);
     this.usersByMovie = {};
@@ -123,4 +123,4 @@ class PassinData1Solution extends Component {
   }
 }
 
-export default PassinData1Solution;
+export default PassingData1Problem;
