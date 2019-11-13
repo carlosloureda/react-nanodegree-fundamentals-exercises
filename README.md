@@ -12,3 +12,7 @@ mentor while you study check [Udacity Nanodegree on React](https://www.udacity.c
 ### All together Exercise 1
 
 The explanation for this exercise is [here](/src/components/AllTogetherExercise1/README.md)
+
+### All together Exercise 2
+
+The explanation for this exercise is [here](/src/components/AllTogetherExercise2/README.md)
