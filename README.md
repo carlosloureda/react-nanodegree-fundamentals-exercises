@@ -1,11 +1,8 @@
 # React Fundamentals Nanodegree Exercises
 
-This is a quick repo for my udacity nanodegree students to see the solutions for
-the first exercises on the react nanodegree. And who knows! Maybe I will be adding
-also more exercises here.
+A quick respository with exercises and solutions on React State Management.
 
-If you are new to React and want to get some nice content and have a personalized
-mentor while you study check [Udacity Nanodegree on React](https://www.udacity.com/course/react-nanodegree--nd019)
+Please try to solve these exercises in the given order as they are in increasing order of difficulty
 
 ## Lesson 3 Exercises - State Management
 

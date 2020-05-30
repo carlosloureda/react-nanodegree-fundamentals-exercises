@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import MovieCardsList from "./MovileCardList";
 
 const profiles = [
@@ -90,15 +90,13 @@ const movies = {
   }
 };
 
-class FunctionalComponentsSolution extends Component {
-  render() {
-    return (
-      <div>
-        <h1>How Popular is Your Favorite Movie?</h1>
-        <MovieCardsList profiles={profiles} movies={movies} users={users} />
-      </div>
-    );
-  }
+const FunctionalComponentsSolution = () => {
+  return (
+    <div>
+      <h1>How Popular is Your Favorite Movie?</h1>
+      <MovieCardsList profiles={profiles} movies={movies} users={users} />
+    </div>
+  );
 }
 
 export default FunctionalComponentsSolution;

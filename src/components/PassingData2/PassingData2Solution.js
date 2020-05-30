@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard";
 /*
 Use React and the data below to display a list of users alongside their favorite movies.
 
-For detailed instructions, refer to instructions.md.
+For detailed instructions, refer to README.md.
 */
 
 const profiles = [
@@ -124,13 +124,13 @@ class PassingData1Solution extends Component {
         <h2>How Popular is Your Favorite Movie?</h2>
         {/* {Object.entries(this.usersByMovie).map(([movieID, usersIDs]) => { */}
         <div>
-          {Object.keys(movies).map(id => {
+          {Object.keys(movies).map(movieId => {
             return (
               <MovieCard
-                key={id}
+                key={movieId}
                 users={users}
-                movie={movies[id]}
-                usersIdsWhoLikedMovie={this.usersByMovie[id]}
+                movie={movies[movieId]}
+                usersIdsWhoLikedMovie={this.usersByMovie[movieId]}
               />
             );
           })}

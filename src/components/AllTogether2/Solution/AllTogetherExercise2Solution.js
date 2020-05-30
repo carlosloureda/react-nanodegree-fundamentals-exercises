@@ -1,11 +1,11 @@
 import React from "react";
 
-import "./AllTogetherExercise2.css";
+import "./AllTogetherExercise2Solution.css";
 import ChatWindow from "./ChatWindow";
 /*
 This exercise will help you practice many of your newly aquired React skills.
 
-The instructions are included in the `instructions.md` file.
+The instructions are included in the `README.md` file.
 */
 
 const users = [{ username: "Amy" }, { username: "John" }];
@@ -16,7 +16,7 @@ const messages = [
   // { username: "John", text: "Hi, Amy! Good, you?" }
 ];
 
-class AllTogetherExercide2 extends React.Component {
+class AllTogetherExercise2Solution extends React.Component {
   state = {
     messages: messages
   };
@@ -33,7 +33,7 @@ class AllTogetherExercide2 extends React.Component {
 
     return (
       <div>
-        <h1>AllTogetherExercide2</h1>
+        <h1>AllTogetherExercise2Solution</h1>
         <div className="container">
           {users.map(user => (
             <ChatWindow
@@ -49,4 +49,4 @@ class AllTogetherExercide2 extends React.Component {
   }
 }
 
-export default AllTogetherExercide2;
+export default AllTogetherExercise2Solution;

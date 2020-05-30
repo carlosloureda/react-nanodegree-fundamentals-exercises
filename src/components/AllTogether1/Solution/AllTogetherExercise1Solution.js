@@ -3,7 +3,7 @@ import React from "react";
 import AddPlayer from "./AddPlayer";
 import Players from "./Players";
 
-class AllTogetherExercide1 extends React.Component {
+class AllTogetherExercise1Solution extends React.Component {
   state = {
     players: {
       //   carlosloureda: {
@@ -32,7 +32,7 @@ class AllTogetherExercide1 extends React.Component {
   render() {
     return (
       <div>
-        <h1>AllTogetherExercide1</h1>
+        <h1>AllTogetherExercise1Solution</h1>
         <h2>Add and List some players</h2>
         <AddPlayer onAddNewPlayer={this.onAddNewPlayer} />
         <Players players={this.state.players} />
@@ -41,4 +41,4 @@ class AllTogetherExercide1 extends React.Component {
   }
 }
 
-export default AllTogetherExercide1;
+export default AllTogetherExercise1Solution;

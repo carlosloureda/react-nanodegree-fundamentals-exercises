@@ -3,7 +3,7 @@ import React, { Component } from "react";
 /*
 Use React and the data below to display a list of users alongside their favorite movies.
 
-For detailed instructions, refer to instructions.md.
+For detailed instructions, refer to README.md.
 */
 
 const profiles = [
